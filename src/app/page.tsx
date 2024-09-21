@@ -1,7 +1,10 @@
 import Image from "next/image";
-import { LoginForm } from "../pages/login"
+import UserPage from "../pages/user-page"
 export default function Home() {
   return (
-    <LoginForm />
+    <div className="h-screen flex items-center justify-center">
+      <UserPage />
+    </div>
+
   );
 }
