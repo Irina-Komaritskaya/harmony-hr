@@ -8,6 +8,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+	fontFamily:{"inter": "var(--font-inter)"},
+	fontSize: {
+		sm: ['0.75rem', '1.0588rem'],
+		lg: ['1.125rem', '1.36rem'],
+		xl: ['1.25rem', '1.5rem'],
+		'3xl': ['1.875rem', '2.27rem'],
+	  },
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',
