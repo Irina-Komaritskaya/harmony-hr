@@ -7,7 +7,7 @@ export default function Navbar({ className }) {
             </Link>
             <Link
                 href="#"
-                className="text-lg p-4 bg-blue-gray hover:bg-blue-gray rounded-t-lg after:"
+                className="text-lg p-4 bg-blue-gray hover:bg-blue-gray rounded-t-lg"
             >
                 My Info
             </Link>

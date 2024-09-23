@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const Inter = localFont({
+const inter = localFont({
   src: [
-    {
-      path: "./fonts/Inter-Medium.woff2",
-      weight: '500',
-      style: 'normal',
-    },
     {
       path: "./fonts/Inter-Regular.woff2",
       weight: '400',
+      style: 'normal',
+    },
+    {
+      path: "./fonts/Inter-Medium.woff2",
+      weight: '500',
       style: 'normal',
     },
     {
@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${Inter.variable} antialiased`}
+        className={`${inter.variable} antialiased`}
       >
         {children}
       </body>

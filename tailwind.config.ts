@@ -8,7 +8,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-	fontFamily:{"inter": "var(--font-inter)"},
+	fontFamily:{sans:"var(--font-inter)"},
 	fontSize: {
 		sm: ['0.75rem', '1.0588rem'],
 		lg: ['1.125rem', '1.36rem'],
@@ -19,6 +19,7 @@ const config: Config = {
   		colors: {
 			"blue-gray": {
 				DEFAULT: '#DAE6F2',
+				150: "#7C96B1",
 				700: "#1C3144",
 			},
   			background: 'hsl(var(--background))',

@@ -21,7 +21,7 @@ export default function Header() {
 
             <Navbar className="hidden lg:flex md:self-end" />
 
-            <div className="flex xl:hidden md:pb-4">
+            <div className="flex xl:hidden lg:pb-4">
                 <Button variant="outline" className="w-12 h-8 border-black">
                     <Search className="h-4 w-4 stroke-blue-gray-700" />
                 </Button>
