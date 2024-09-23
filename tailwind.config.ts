@@ -17,7 +17,10 @@ const config: Config = {
 	  },
   	extend: {
   		colors: {
-			blue: "#DAE6F2",
+			"blue-gray": {
+				DEFAULT: '#DAE6F2',
+				700: "#1C3144",
+			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
