@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
 	fontFamily:{sans:"var(--font-inter)"},
 	fontSize: {
-		sm: ['0.75rem', '1.0588rem'],
+		sm: ['0.875rem', '1.0588rem'],
 		lg: ['1.125rem', '1.36rem'],
 		xl: ['1.25rem', '1.5rem'],
 		'3xl': ['1.875rem', '2.27rem'],

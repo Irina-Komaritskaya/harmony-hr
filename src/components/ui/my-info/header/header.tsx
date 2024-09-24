@@ -19,7 +19,7 @@ export default function HeaderMyInfo() {
             </span>
             <EllipsisVertical className="lg:hidden w-4 h-4 col-start-4 justify-self-center self-start" />
 
-            <div className="flex self-center justify-self-center">
+            <div className="lg:flex hidden self-center justify-self-center">
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                         <Button
