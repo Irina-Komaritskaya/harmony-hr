@@ -6,7 +6,7 @@ import {
     CircleUser,
     Menu,
 } from "lucide-react";
-import Navbar from "@/components/ui/header/navbar";
+import Navbar from "@/components/navbar";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";

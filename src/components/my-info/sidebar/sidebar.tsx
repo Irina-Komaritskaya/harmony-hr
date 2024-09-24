@@ -13,17 +13,6 @@ import {
     CircleUserRound,
 } from "lucide-react";
 
-// const data = {
-//     work_info: {
-//         namber: { icon: "Phone", text: "5" },
-//         job_type: { icon: "Phone", text: "Full-Time" },
-//         operations: { icon: "Phone", text: "Operations" },
-//         zone: { icon: "Phone", text: "Europe" },
-//     },
-//     location: { icon: "Phone", text: "London, UK" },
-//     reports: { icon: "Phone", text: ["Shane", "Nathan", "Mitchel", "Philip", "4 More..."] }
-// }
-
 const dataReports = ["Shane", "Nathan", "Mitchel", "Philip", "4 More..."]
 
 export default function SidebarMyInfo() {

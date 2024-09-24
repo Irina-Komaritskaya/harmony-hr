@@ -1,14 +1,19 @@
-import Header from "@/components/ui/header/header";
-import HeaderMyInfo from "@/components/ui/my-info/header/header";
-import SidebarMyInfo from "@/components/ui/my-info/sidebar/sidebar";
+import Header from "@/components/header/header";
+import HeaderMyInfo from "@/components/my-info/header/header";
+import SidebarMyInfo from "@/components/my-info/sidebar/sidebar";
+import TimeOffPage from "./time-off-page";
 export default function UserPage() {
     return (
         <>
             <Header />
             <HeaderMyInfo />
-            <div className="w-[225px]">
+            <div className="flex"> <div className="hidden lg:flex w-[225px]">
                 <SidebarMyInfo />
             </div>
+
+                <div className="w-[1047px]">
+                    <TimeOffPage />
+                </div></div>
 
         </>
 
