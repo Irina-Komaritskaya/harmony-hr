@@ -1,4 +1,7 @@
+'use client'
 import Link from "next/link";
+import { useQuery } from '@apollo/client';
+import GET_USER from '@/lib/queries';
 import { Button } from "@/components/ui/button";
 import { ChevronDown, EllipsisVertical, Settings } from "lucide-react";
 import {
@@ -9,13 +12,18 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 export default function HeaderMyInfo() {
+
+    const { loading, error, data } = useQuery(GET_USER);
+
     return (
         <div className="bg-blue-gray grid grid-cols-4 grid-rows-2 h-[157px] lg:h-[184px] items-end pt-6">
             <div className="relative justify-self-center lg:justify-self-end col-start-1 lg:row-start-2 lg:mr-[55px] lg:-mb-2">
-                <div className="w-[60px] h-[60px] lg:w-[150px] lg:h-[150px] bg-blue-gray-300 rounded-full"></div>
+                {loading ? "" : <div className="w-[60px] h-[60px] lg:w-[150px] lg:h-[150px] bg-blue-gray-300 rounded-full">
+                    <img src={data.user.avatar} alt="avatar" className="rounded-full" />
+                </div>}
             </div>
             <span className="font-semibold text-xl col-start-2 col-span-2 justify-self-start lg:text-[28px]">
-                Alexandra Kuibyshevskaya
+                {loading ? "" : data.user.name} Kuibyshevskaya
             </span>
             <EllipsisVertical className="lg:hidden w-4 h-4 col-start-4 justify-self-center self-start" />
 
