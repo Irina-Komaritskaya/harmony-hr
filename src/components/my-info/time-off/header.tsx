@@ -4,8 +4,8 @@ import { FileClock } from "lucide-react";
 
 export default function HeaderTimeOff() {
     return (
-        <div>
-            <div className="h-[106px] lg:h-[84px] flex items-end p-4 xl:p-6 lg:p-4 place-content-end lg:place-content-between">
+        <div className="px-4">
+            <div className="flex items-end h-[106px] lg:h-[84px] py-4 xl:p-6 lg:p-4 place-content-end lg:place-content-between">
                 <div className="lg:flex gap-3 items-center hidden">
                     <FileClock className="w-4 h-4" />
                     <h1 className="text-md lg:text-xl font-medium text-blue-gray-500">

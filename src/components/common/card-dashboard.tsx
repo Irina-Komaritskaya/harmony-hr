@@ -1,6 +1,6 @@
 export default function CardDashboard({ content }) {
     return (
-        <div className="text-center w-full">
+        <div className="text-center w-full min-w-[264px]">
             <div className="bg-slate-100 p-4 flex flex-col items-center place-content-center gap-2 rounded-lg h-[138px]">
                 <div className="text-xl font-semibold">{content.caption}</div>
                 <div className="flex items-center gap-2.5">

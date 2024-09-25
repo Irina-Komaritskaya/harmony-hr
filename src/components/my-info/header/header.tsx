@@ -10,16 +10,16 @@ import {
 
 export default function HeaderMyInfo() {
     return (
-        <div className="bg-blue-gray grid grid-cols-4 h-[157px] lg:h-[184px] items-end pt-6">
-            <div className="hidden lg:flex w-[150px] h-[150px] bg-white rounded-full"></div>
-
-            <div className="w-[60px] h-[60px] lg:hidden bg-white rounded-full justify-self-center self-start"></div>
-            <span className="font-semibold text-xl col-start-2 col-span-2 justify-self-start self-start lg:self-center">
+        <div className="bg-blue-gray grid grid-cols-4 grid-rows-2 h-[157px] lg:h-[184px] items-end pt-6">
+            <div className="relative justify-self-center lg:justify-self-end col-start-1 lg:row-start-2 lg:mr-[55px] lg:-mb-2">
+                <div className="w-[60px] h-[60px] lg:w-[150px] lg:h-[150px] bg-blue-gray-300 rounded-full"></div>
+            </div>
+            <span className="font-semibold text-xl col-start-2 col-span-2 justify-self-start lg:text-[28px]">
                 Alexandra Kuibyshevskaya
             </span>
             <EllipsisVertical className="lg:hidden w-4 h-4 col-start-4 justify-self-center self-start" />
 
-            <div className="lg:flex hidden self-center justify-self-center">
+            <div className="lg:flex hidden justify-self-center">
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                         <Button

@@ -7,16 +7,14 @@ export default function UserPage() {
         <>
             <Header />
             <HeaderMyInfo />
-            <div className="flex"> <div className="hidden lg:flex w-[225px]">
-                <SidebarMyInfo />
-            </div>
-
-                <div className="w-[1047px]">
+            <div className="bg-slate-100 grid grid-cols-4">
+                <div className="hidden lg:flex w-[225px] justify-items-center justify-self-end mr-4 -mt-3.5">
+                    <SidebarMyInfo />
+                </div>
+                <div className="col-span-4 lg:grid-start-2 lg:col-span-3 max-w-[1047px] min-w-[360px] bg-background pb-20">
                     <TimeOffPage />
-                </div></div>
-
+                </div>
+            </div>
         </>
-
-
     );
 }

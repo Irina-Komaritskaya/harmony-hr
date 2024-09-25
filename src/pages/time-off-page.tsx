@@ -8,13 +8,19 @@ export default function TimeOffPage() {
     return (
         <div>
             <HeaderTimeOff />
-            <div className="flex gap-12">
+            <div className="flex gap-12 py-6 px-4 overflow-x-auto">
                 <CardDashboard content={cardContent.sick} />
                 <CardDashboard content={cardContent.holiday} />
                 <CardDashboard content={cardContent.comp} />
             </div>
-            <UncomingTimeOff />
-            <HistoryTimeOff />
+            <div className="px-6">
+                <UncomingTimeOff />
+            </div>
+
+            <div className="overflow-x-auto p-6">
+                <HistoryTimeOff />
+            </div>
+
         </div>
     );
 }

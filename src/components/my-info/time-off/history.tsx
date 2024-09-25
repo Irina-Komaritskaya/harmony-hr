@@ -12,34 +12,40 @@ import {
 export default function HistoryTimeOff() {
     return (
         <div>
-            <div>
-                <FolderClock />
-                <h3>History</h3>
+            <div className="flex gap-2 pt-6 pb-4">
+                <FolderClock className="w-4 h-4 stroke-blue-gray-600" />
+                <h3 className="font-blue-gray-500 text-sm font-medium">
+                    History
+                </h3>
             </div>
-            <div className="flex pb-2">
-                <Combobox
-                    content={contentCombobox}
-                    startValue={contentCombobox[0].value}
-                    placeholder="rhf"
-                    classNameButton={"w-[256px] mr-4"}
-                />
+            <div className="flex pb-4 lg:pb-2 flex-wrap gap-4">
+                <div className="basis-full lg:basis-64 ">
+                    <Combobox
+                        content={contentCombobox}
+                        startValue={contentCombobox[0].value}
+                        placeholder="rhf"
+                        classNameButton={"basis-full lg:basis-64 lg:mr-4"}
+                    />
+                </div>
+
                 <Combobox
                     content={contentCombobox}
                     startValue={contentCombobox[1].value}
                     placeholder="rhf"
                     classNameButton={"w-[96px]"}
                 />
-                <div className="ml-auto"> <Combobox
-                    content={contentCombobox}
-                    startValue={contentCombobox[2].value}
-                    placeholder="rhf"
-                    classNameButton={"w-[176px]"}
-                /></div>
 
+                <div className="ml-auto">
+                    <Combobox
+                        content={contentCombobox}
+                        startValue={contentCombobox[2].value}
+                        placeholder="rhf"
+                        classNameButton={"w-[176px]"}
+                    />
+                </div>
             </div>
 
-
-            <Table className="text-sm font-medium">
+            <Table className="text-sm font-medium min-w-[1000px]">
                 <TableHeader className="bg-blue-gray">
                     <TableRow>
                         <TableHead className="text-black flex items-center">

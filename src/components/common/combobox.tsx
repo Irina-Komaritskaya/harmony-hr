@@ -30,7 +30,7 @@ export function Combobox({
     return (
         <Popover open={open} onOpenChange={setOpen}>
             <PopoverTrigger asChild>
-                <div>
+                <div className="flex">
                     <Button
                         variant="outline"
                         role="combobox"
