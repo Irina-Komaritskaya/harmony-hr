@@ -13,7 +13,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export default function Header() {
     return (
-        <header className="sticky top-0 flex px-6 h-[50px] items-center place-content-between lg:items-end md:h-[86px]">
+        <header className="top-0 flex px-6 h-[50px] items-center place-content-between lg:items-end md:h-[86px]">
             <span className="inter font-semibold self-center sm:text-xl xl:text-3xl ">
                 HarmonyHR
             </span>

@@ -16,7 +16,7 @@ export default function HeaderTimeOff() {
                 <div className="gap-2 flex flex-col lg:flex-row lg:gap-[30px] xl:items-center items-end">
                     <div className="flex text-sm font-medium gap-2 ">
                         <span>Accrual Level Start Date </span>
-                        <span className="text-blue-gray-300">
+                        <span className="text-blue">
                             &nbsp;03/09-2020
                         </span>
                     </div>

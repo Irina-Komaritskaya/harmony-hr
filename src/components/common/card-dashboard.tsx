@@ -8,12 +8,12 @@ export default function CardDashboard({ content }) {
                     <div className="text-3xl font-semibold text-blue-gray-700">{content.number}</div>
                 </div>
                 <div>
-                    <div className="text-sm font-semibold">{content.title}</div>
-                    <div className="text-sm text-blue-gray-150">{content.subtitle}</div>
+                    <div className="text-sm font-semibold mb-1">{content.title}</div>
+                    <div className="text-sm text-blue-gray-300">{content.subtitle}</div>
                 </div>
 
             </div>
-            <div className="text-sm text-blue-gray-150 font-medium pt-2">{content.footer}</div>
+            <div className="text-sm text-blue-gray-300 font-medium pt-2">{content.footer}</div>
         </div>
     )
 }

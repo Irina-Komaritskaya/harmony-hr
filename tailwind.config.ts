@@ -17,10 +17,10 @@ const config: Config = {
 	  },
   	extend: {
   		colors: {
+			"blue": "#3758AB",
 			"blue-gray": {
 				DEFAULT: '#DAE6F2',
-				150: "#7C96B1",
-				300: "#3758AB",
+				300: "#7C96B1",
 				500: "#204973",
 				700: "#1C3144",
 			},

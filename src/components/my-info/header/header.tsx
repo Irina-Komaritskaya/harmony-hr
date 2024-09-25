@@ -24,7 +24,7 @@ export default function HeaderMyInfo() {
                     <DropdownMenuTrigger asChild>
                         <Button
                             variant="outline"
-                            className="col-start-4 w-[162px] text-sm font-normal bg-transparent border-blue-gray-150 p-2 h-[33px] rounded-lg mr-4"
+                            className="col-start-4 w-[162px] text-sm font-normal bg-transparent border-blue-gray-300 p-2 h-[33px] rounded-lg mr-4"
                         >
                             Request a Change
                             <ChevronDown className="w-4 h-4 stroke-blue-gray-700 ml-2" />
@@ -38,7 +38,7 @@ export default function HeaderMyInfo() {
 
                 <Button
                     variant="outline"
-                    className="col-start-4 w-[65px] text-sm font-normal bg-transparent border-blue-gray-150 p-2 h-[33px] rounded-lg"
+                    className="col-start-4 w-[65px] text-sm font-normal bg-transparent border-blue-gray-300 p-2 h-[33px] rounded-lg"
                 >
                     <Settings className="w-4 h-4 stroke-blue-gray-700" />
                     <ChevronDown className="w-4 h-4 stroke-blue-gray-700 ml-2" />
