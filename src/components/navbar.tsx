@@ -6,7 +6,7 @@ export default function Navbar({ className }) {
                 Home
             </Link>
             <Link
-                href="#"
+                href="/my-info"
                 className="text-lg p-4 bg-blue-gray hover:bg-blue-gray rounded-t-lg"
             >
                 My Info

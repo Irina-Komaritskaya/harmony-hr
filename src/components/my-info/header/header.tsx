@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import { useQuery } from '@apollo/client';
-import GET_USER from '@/lib/queries';
+import { GET_USER } from '@/lib/queries';
 import { Button } from "@/components/ui/button";
 import { ChevronDown, EllipsisVertical, Settings } from "lucide-react";
 import {
@@ -68,7 +68,7 @@ export default function HeaderMyInfo() {
                         Job
                     </Link>
                     <Link
-                        href="#"
+                        href="/time-off"
                         className="w-[90px] py-4 whitespace-pre bg-white hover:bg-white rounded-t-lg hover:rounded-t-lg"
                     >
                         Time Off
